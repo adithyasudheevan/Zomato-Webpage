@@ -3,12 +3,14 @@
   padding: 0;
 }
 
+
 body {
   font-family: "Merriweather", serif;
-  background-color: #f9fafc;
+  background-color: #EED3D9;
 }
 
 .navbar {
+  background-color: #F6F5F5;
   display: flex;
   align-items: center; /*all the navbar components allign in the centre*/
   justify-content: space-around; /*there is space around the items of navibar*/
@@ -43,10 +45,47 @@ body {
   cursor: pointer;
 }
 
+.container {
+  padding: 20px;
+}
+
+.hero_image_container {
+  width: 100%;
+}
+
+.hero_image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0/50%);
+}
+
+.hero_text {
+  font-size: 32px;
+  font-weight:bolder;
+  margin: 20px 0;
+  color: #1d3557;
+}
+
+.hero_description {
+  width: 100%;
+}
+
+
+
 @media (min-width: 768px) {
   .navbar {
     justify-content: space-between;
-    padding: 10px 30px; /*top bottom=10px right left=30px*/
+    padding: 10px 30px; /*top bottom=10px right left=30px(format top,right,bottom,left)*/
+  }
+  .hero_container {
+    display: flex; /* for arranging the text and img on the sides*/
+    flex-direction: row-reverse; /* for arranging the text and img on the sides in reverse direction*/
+    align-items: center;/* for alligning the items in the center*/
+    margin: 20px;
+  }
+  .Explore_menu_lists {
+    display: flex;
+    gap: 15px;
   }
 }
 
@@ -60,5 +99,55 @@ body {
     margin: 4px;
 
   }
+  .container {
+    max-width: 80%;
+    padding-left: 9%;
+  }
+  .hero_text {
+    font-size: 50px;
+  }
+}
 
+.food_card_image {
+  width: 100%;
+
+}
+.food_image {
+  width: 100%;
+  border-radius: 5px 5px 0 0;  /*For ignoring the curving in bottom of the img only in the top*/
+}
+
+.food_card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.food_card_description {
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.Explore_menu_text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #1d3557;
+
+}
+.food_image1 {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  size: 10px 10px 10px 10px;
+}
+.food_card_description1 {
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.food_card1 {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  width: 100%;
 }

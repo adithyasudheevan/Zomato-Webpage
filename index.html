@@ -8,19 +8,72 @@
     <link rel="stylesheet" href="style.css">
     <title>Zomato</title>
   </head>
-  <body>
     <body>
-      <nav class="navbar" >
+      <header>
+       <nav class="navbar" >
         <div class="navbar_brand">
           <img src="Assets/logo.png" alt="logo" class="navbar_logo">
         </div>
         <div class="navbar_nav_items">
           <button class="nav_item">Order food</button>
-
         </div>
+       </nav>
+     </header>
+     <!-- Next partttt starting from here-->
 
-      </nav>
+
+     <main class="container">
+       <!--/*hero section*/-->
+       <section class=hero_container>
+         <div class="hero_image_container"> <!--consume 100% width-->
+           <img src="Assets/hero.jpg" alt="hero image" class="hero_image"><!--inside the hero_container,depend on the hero_container-->
+         </div>
+         <div class="hero_description">
+           <h1 class="hero_text">
+             Order food from favorite restaurant near you.
+           </h1>
+           <button class="nav_item">Order Now</button>
+         </div>
+       </section>
+        <!--Explore menu container-->
+        <section class="Explore_menu_container">
+          <h1 class="Explore_menu_text">Explore Our Menu</h1>
+          <div class="Explore_menu_lists">
+              <!--Burger-->
+            <div class="food_card1">
+              <div class="food_card_image">
+                <img src="Assets/Burger.jpg" alt="Burger" class="food_image1">
+              </div>
+              <div class="food_card_description1">
+                <h3 class="food_title">Burger</h3>
+                <p>Burger King, Mcdonalds, Burger Place <span style="color: #d83a56;"> +3 </span></p>
+              </div>
+            </div>
+            <br>
+              <!--Pizza-->
+              <div class="food_card">
+                <div class="food_card_image">
+                  <img src="Assets/Pizza.jpg" alt="Pizza" class="food_image">
+                </div>
+                <div class="food_card_description">
+                  <h3 class="food_title">Pizza</h3>
+                  <p>Burger King, Mcdonalds, Burger Place <span style="color: #d83a56;"> +3 </span></p>
+                </div>
+              </div>
+              <br>  <!--My Idea :D-->
+              <!--Ice-Creams-->
+              <div class="food_card">
+                <div class="food_card_image">
+                  <img src="Assets/iceCream.jpg" alt="iceCream" class="food_image">
+                </div>
+                <div class="food_card_description">
+                  <h3 class="food_title">IceCream</h3>
+                  <p>Burger King, Mcdonalds, Burger Place <span style="color: #d83a56;"> +3 </span></p>
+                </div>
+              </div>
+          </div>
+
+        </section>
+     </main>
     </body>
-
-  </body>
 </html>
