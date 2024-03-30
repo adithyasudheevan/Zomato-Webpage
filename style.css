@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: #f9fafc;
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /*all the navbar components allign in the centre*/
+  justify-content: space-around; /*there is space around the items of navibar*/
+}
+
+.navbar_brand {
+  width: 100px;
+}
+
+.navbar_logo {
+  width: 100%;
+}
+/*navbar_brand will take 100px of the space in navbar while navbar_logo will occupy 100% of the space thus there is no compression in image placed.*/
+
+.nav_item {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+    color: #ffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600; /*fonts become broader here*/
+
+}
+
+.nav_item:hover {
+  border: 2px solid #5F5D9C; /*when mouse placed changes occur*/
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px; /*top bottom=10px right left=30px*/
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar_brand {
+    width: 150px;
+  }
+  .nav_item {
+    padding: 20px;
+    font-size: 20px;
+    margin: 4px;
+
+  }
+
+}
